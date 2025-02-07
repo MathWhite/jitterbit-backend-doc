@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matheus Carvalho</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="shortcut icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
+  <link id="theme-style" rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" />
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: '',
+      repo: '',
+      loadNavbar: true,
+      loadSidebar: true,
+      search: {
+        maxAge: 3600, // Expiration time, the default one day
+        paths: 'auto', // or 'auto'
+        placeholder: 'Type to search',
+        noData: 'No Results!',
+        depth: 2,
+        hideOtherSidebarContent: false,
+        namespace: 'website-1',
+        pathNamespaces: ['/zh-cn', '/ru-ru', '/ru-ru/v1'],
+        pathNamespaces: /^(\/(zh-cn|ru-ru))?(\/(v1|v2))?/,
+      },
+    };
+
+    function themeSelector(themeName) {
+      const themeStyle = document.getElementById('theme-style');
+      let urlTheme = "";
+      switch(themeName) {
+        case 'dark-orange':
+          urlTheme = "//cdn.jsdelivr.net/npm/docsify/lib/themes/dark.css";
+          break;
+        case 'pure':
+          urlTheme = "//cdn.jsdelivr.net/npm/docsify/lib/themes/pure.css";
+          break;
+        case 'vue':
+          urlTheme = "//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css";
+          break;
+        case 'buble':          
+          urlTheme = "//cdn.jsdelivr.net/npm/docsify/lib/themes/buble.css";
+          break;
+      }
+      themeStyle.setAttribute('href', urlTheme);
+    }
+    
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  
+</body>
+</html>
