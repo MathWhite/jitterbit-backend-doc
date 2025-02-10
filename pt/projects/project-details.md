@@ -11,7 +11,7 @@
 | Chave | Valor | Descrição |
 |-------|-------|-----------|
 | Content-Type | application-json | -- |
-| token | {{ token }} | Token gerado em [Harmony Login](../token/harmony-login.md) |
+| token | {{ token }} | Token gerado em [Harmony Login](/pt/token/harmony-login-token-only.md) |
 
 - **Parameters**
 
