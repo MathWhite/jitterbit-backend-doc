@@ -22,10 +22,12 @@
 - **Body**
 > Para criar um relatório de crons, crie uma planilha no google drive, de acesso a `jitterbit-reporter@matheus-api-report.iam.gserviceaccount.com` e passe o id da planilha no campo `report.sheet_id`.
 
+> Para criar um relatório de APIs, crie uma planilha no google drive, de acesso a `jitterbit-reporter@matheus-api-report.iam.gserviceaccount.com` e passe o id da planilha no campo `report.sheet_id`, marque o campo get_api_list como true, e only_schedules como false, tambem marque create_report como true.
 ```javascript
 {
     "params": {
-        "only_schedules": false //para trazer apenas os schedules
+        "only_schedules": false, //para trazer apenas os schedules
+        "get_api_list": false //para trazer as APIs (não funciona com filtro de schedules)
     },
     "report": {
         "create_report": false, //para criar um relatório dos schedules (ambas flags em true)
@@ -50,3 +52,4 @@ curl --location --request GET 'http://18.228.44.24:3000/api/projects/details?org
     }
 }'
 ```
+
