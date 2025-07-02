@@ -3,7 +3,7 @@
 >**Descrição**:
 > Liga o log de todas as API's de um [Environment](https://docs.jitterbit.com/management-console/environments/) por 7 dias.
 
-- **Url Base**: `http://18.228.44.24:3000`
+- **Url Base**: `https://api.bakebell.cloud`
 - **Path**: `/api/turnlogson`
 - **Method**: `POST`
 - **Headers**
@@ -24,7 +24,7 @@
 - **Curl**
 
 ```javascript
-curl --location --request POST 'http://18.228.44.24:3000/api/turnlogson?orgId={{orgId}}&envId={{envId}}' \
+curl --location --request POST 'https://api.bakebell.cloud/api/turnlogson?orgId={{orgId}}&envId={{envId}}' \
 --header 'Content-Type: application/json' \
 --header 'token: {{token}}'
 ```

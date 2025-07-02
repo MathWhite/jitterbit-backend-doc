@@ -3,7 +3,7 @@
 >**Descrição**:
 > Lista as filas de um ambiente.
 
-- **Url Base**: `http://18.228.44.24:3000`
+- **Url Base**: `https://api.bakebell.cloud`
 - **Path**: `/api/jbmq`
 - **Method**: `GET`
 - **Headers**
@@ -22,6 +22,6 @@
 - **Curl**
 
 ```javascript
-curl --location --globoff 'http://18.228.44.24:3000/api/jbmq?orgId={{orgId}}&envId={{envId}}' \
+curl --location --globoff 'https://api.bakebell.cloud/api/jbmq?orgId={{orgId}}&envId={{envId}}' \
 --header 'token: {{token}}'
 ```

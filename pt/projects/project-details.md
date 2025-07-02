@@ -3,7 +3,7 @@
 >**Descrição**:
 > Lista todos os projetos de uma organização junto com as informações de workflow, operations, crons e chunks configurados em cada projeto.
 
-- **Url Base**: `http://18.228.44.24:3000`
+- **Url Base**: `https://api.bakebell.cloud`
 - **Path**: `/api/projects/details`
 - **Method**: `GET`
 - **Headers**
@@ -39,7 +39,7 @@
 - **Curl**
 
 ```javascript
-curl --location --request GET 'http://18.228.44.24:3000/api/projects/details?orgId={{orgId}}' \
+curl --location --request GET 'https://api.bakebell.cloud/api/projects/details?orgId={{orgId}}' \
 --header 'token: {{token}}' \
 --header 'Content-Type: application/json' \
 --data '{

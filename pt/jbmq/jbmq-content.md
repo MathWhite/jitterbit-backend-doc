@@ -3,7 +3,7 @@
 >**Descrição**:
 > Lista os 1000 primeiros registros (e seus conteúdos) de uma fila.
 
-- **Url Base**: `http://18.228.44.24:3000`
+- **Url Base**: `https://api.bakebell.cloud`
 - **Path**: `/api/jbmq/content`
 - **Method**: `GET`
 - **Headers**
@@ -23,6 +23,6 @@
 - **Curl**
 
 ```javascript
-curl --location --globoff 'http://18.228.44.24:3000/api/jbmq/content?orgId={{orgId}}&envId={{envId}}&queueName={{queueName}}' \
+curl --location --globoff 'https://api.bakebell.cloud/api/jbmq/content?orgId={{orgId}}&envId={{envId}}&queueName={{queueName}}' \
 --header 'token: {{token}}'
 ```

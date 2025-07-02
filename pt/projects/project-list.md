@@ -3,7 +3,7 @@
 >**Descrição**:
 > Lista todos os projetos de uma organização.
 
-- **Url Base**: `http://18.228.44.24:3000`
+- **Url Base**: `https://api.bakebell.cloud`
 - **Path**: `/api/projects`
 - **Method**: `GET`
 - **Headers**
@@ -21,6 +21,6 @@
 - **Curl**
 
 ```javascript
-curl --location 'http://18.228.44.24:3000/api/projects?orgId={{orgId}}' \
+curl --location 'https://api.bakebell.cloud/api/projects?orgId={{orgId}}' \
 --header 'token: {{token}}
 ```
