@@ -7,6 +7,7 @@
 - [<i class="mdi mdi-list-box"></i> Projects](#)
     - [List Projects](pt/projects/project-list.md)
     - [List Projects Details](pt/projects/project-details.md)
+    - [List Projects Export](pt/projects/project-export.md)
 - [<i class="mdi mdi-human-queue"></i> Jitterbit MQ](#)
     - [List Queues](pt/jbmq/jbmq-list.md)
     - [List Queue Content](pt/jbmq/jbmq-content.md)
